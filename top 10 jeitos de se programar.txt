@@ -1,0 +1,40 @@
+TOP 10 JEITOS DE SE PROGRAMAR
+==============================
+ 
+10. Programação Orientada a Café
+    Nenhuma linha de código é escrita sem antes garantir o nível
+    mínimo de cafeína no sangue.
+ 
+9. Copia e Cola do Stack Overflow
+    Não entende o código, mas funciona. Não mexe.
+ 
+8. Debug com print() em Tudo
+    print("aqui"), print("cheguei aqui"), print("pq não funciona"),
+    print("SOCORRO").
+ 
+7. Programação Orientada ao Prazo
+    90% do projeto é feito nas últimas 3 horas antes da entrega.
+ 
+6. Rubber Duck Debugging
+    Explica o problema pro patinho de borracha e descobre o bug
+    no meio da segunda frase.
+ 
+5. "Rodou na Minha Máquina"
+    Se funciona no seu PC, o problema agora é do universo.
+ 
+4. Perguntar pra IA
+    "Claude, por que isso não funciona?" repetido 47 vezes seguidas.
+ 
+3. Reescrever Tudo do Zero às 3h da Manhã
+    Decisão tomada em pleno surto de produtividade insone.
+ 
+2. Copiar do Seu Próprio Código Antigo
+    Você mesmo, 6 meses atrás, era um gênio que você não lembra
+    de ter sido.
+ 
+1. Programação Orientada à Sorte
+    git commit -m "ajustes" e um git push na torcida.
+ 
+==============================
+Arquivo de teste — commit e push à vontade!
+ 
