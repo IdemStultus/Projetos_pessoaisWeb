@@ -6,7 +6,7 @@ if(isset($_GET['id']))
         $id=$_GET['id'];
 
         $sql = "delete from clientes where id = $id";
-        $mensagem="del com suce";
+        $mensagem="Deletado com sucesso";
         mysqli_query($conexao, $sql);
 
     

@@ -6,7 +6,7 @@ if(isset($_GET['id']))
         $id=$_GET['id'];
 
         $sql = "delete from servico where id = $id";
-        $mensagem="Registro excluído";
+        $mensagem="Deletado com sucesso";
         mysqli_query($conexao, $sql);
 
         //redirecionamento

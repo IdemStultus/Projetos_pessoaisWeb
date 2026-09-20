@@ -25,7 +25,6 @@ if ($email === '' || $senha === '' || $confirmarSenha === '') {
     !preg_match('/[0-9]/', $senha) ||
     !preg_match('/[\W_]/', $senha)
 ) {
-
     $erro[] = "A senha deve ter no mínimo 8 caracteres, uma letra maiúscula, uma letra minúscula, um número e um caractere especial.";
 } else {
         $email = mysqli_real_escape_string($conexao, $email);
@@ -42,7 +41,7 @@ if ($email === '' || $senha === '' || $confirmarSenha === '') {
             $_SESSION['usuario'] = $idUsuario;
             $_SESSION['email'] = $email;
 
-            header("Location: ../Cliente/cliente-cadastrar.php");
+            header("Location: ../Cliente/cliente-listar.php");
             exit;
         }
     }
@@ -57,6 +56,7 @@ if ($email === '' || $senha === '' || $confirmarSenha === '') {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Trabalho%202t/outro/estilos.css">
 </head>
 <script>
 function mostrarSenha(idCampo, idIcone) {
@@ -82,13 +82,17 @@ function mostrarSenha(idCampo, idIcone) {
 </script>
 <body>
 
-<div class="d-flex align-items-center justify-content-center min-vh-100">
-    <div class="container" style="max-width: 500px;">
-        <div class="card mb-3">
-            <div class="card-body text-center">
-                <h5 class="card-title">Cadastrar Login</h5>
+<main class="login-page d-flex align-items-center justify-content-center">
+    <div class="card login-card">
+        <header class="login-header">
+            <div class="logo-mark" aria-hidden="true">
+                <i class="bi bi-arrow-down-right-square"></i>
             </div>
-        </div>
+            <h1>Sistema</h1>
+            <p>Crie seu acesso para continuar</p>
+        </header>
+
+        <div class="login-body">
 
         <?php if (!empty($erro)) : ?>
             <div class="alert alert-danger" role="alert">
@@ -121,8 +125,9 @@ function mostrarSenha(idCampo, idIcone) {
             onclick="mostrarSenha('confirmarSenha', 'iconeConfirmarSenha')">
             <i class="bi bi-eye" id="iconeConfirmarSenha"></i>
         </button>
+        </div>
     </div>
-</div>
+</main>
             <div class="d-flex gap-2 mt-3">
                 <button name="btnCadastrar" type="submit" class="btn btn-primary flex-grow-1">Cadastrar</button>
                 <a href="login.php" class="btn btn-secondary">Já tenho cadastro</a>
